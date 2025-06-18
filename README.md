@@ -1,1 +1,1 @@
-Deployment URL : https://vt-healthcare.netlify.app/dashboard
+Deployment URL : vt-healthcare.netlify.app/dashboard
