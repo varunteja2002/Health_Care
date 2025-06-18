@@ -1,0 +1,144 @@
+.layoutContainer {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+#sidebar {
+  width: 250px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#sidebar h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#sidebar a {
+  text-decoration: none;
+  color: #555;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+#sidebar a:hover {
+  background-color: #e9ecef;
+  color: #000;
+}
+
+.imageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.rightImage {
+  max-width: 80%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.dashboardmain{
+    display: flex;
+}
+.dashboardmiddle{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Tablet Screens*/
+@media (max-width: 1024px) {
+  .dashboardmain {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .dashboardmiddle {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .calendarContainer,
+  .scheduleContainer {
+    width: 90%;
+    max-width: 500px;
+  }
+}
+
+ /* Mobile Screens  */
+@media (max-width: 768px) {
+  .dashboardmain {
+    padding: 10px;
+  }
+
+  .dashboardmiddle {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .calendarContainer,
+  .scheduleContainer {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .activity-bars {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .bar-container {
+    flex: 0 0 40px;
+  }
+}
+
+/* Small Mobile Screens */
+@media (max-width: 480px) {
+  #sidebar {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  #sidebar h2 {
+    font-size: 1rem;
+  }
+
+  #sidebar a {
+    font-size: 0.8rem;
+    padding: 6px 8px;
+  }
+
+  .dashboardmain {
+    padding: 5px;
+  }
+
+  .bar-container {
+    flex: 0 0 30px;
+  }
+
+  .bar-label {
+    font-size: 0.6rem;
+  }
+}
+
